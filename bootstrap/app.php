@@ -7,7 +7,7 @@ use Illuminate\Support\Facades\Route;
 
 return Application::configure(basePath: dirname(__DIR__))
     ->withRouting(
-        health: '/up',
+        api: __DIR__.'/../routes/api.php',
         then: function () {
             Route::get('/', fn () => view('game'));
         },
