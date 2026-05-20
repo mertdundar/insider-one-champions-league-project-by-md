@@ -5,6 +5,13 @@ A 4-team (statically-coded with team strengths within their names for case purpo
 odds from week 4 onward. Built with Laravel (PHP 8.5) and Vue.js (Vue 3 + JavaScript), and SQLite as persistent SQL database (even though it was not expected) runs in a single
 Docker container.
 
+## [Live Demo](https://insider-one-champions-league-project-by.onrender.com)
+
+Accessible via Render (**could take a while to load due to Free Tier shutting down after 60 seconds inactivity**)
+
+[https://insider-one-champions-league-project-by.onrender.com](https://insider-one-champions-league-project-by.onrender.com)
+
+
 ## Requirements
 
 The only thing you need is **Docker** (Docker Desktop includes everything).
