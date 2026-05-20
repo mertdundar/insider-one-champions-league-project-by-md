@@ -91,4 +91,39 @@ async function save() {
 .save:disabled { opacity: 0.5; cursor: not-allowed; }
 .cancel { background: var(--surface-alt); color: var(--ink); border: 1px solid var(--border); }
 tr td { border-bottom: 1px solid var(--border); }
+
+@media (max-width: 480px) {
+    tr {
+        display: grid;
+        grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr);
+        align-items: center;
+        border-bottom: 1px solid var(--border);
+    }
+
+    tr td { border-bottom: 0; }
+    tr:last-child { border-bottom: 0; }
+
+    .team.home,
+    .team.away {
+        padding: 10px 8px 4px;
+        overflow-wrap: anywhere;
+    }
+
+    .score,
+    .score-edit {
+        min-width: 58px;
+        padding: 10px 4px 4px;
+    }
+
+    .actions {
+        grid-column: 1 / -1;
+        padding: 0 8px 10px;
+    }
+
+    .edit-link,
+    .save,
+    .cancel {
+        min-height: 32px;
+    }
+}
 </style>

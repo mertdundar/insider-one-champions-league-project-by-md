@@ -24,7 +24,7 @@ const fixtures = computed(() => store.weekFixtures[String(lookupWeek.value)] || 
 </script>
 
 <style scoped>
-.results { width: 100%; min-width: 420px; border-collapse: collapse; font-variant-numeric: tabular-nums; }
+.results { width: 100%; border-collapse: collapse; font-variant-numeric: tabular-nums; }
 .results tr:last-child td { border-bottom: 0; }
 .empty { padding: 12px; color: var(--ink-muted); text-align: center; }
 </style>
