@@ -45,7 +45,7 @@ RUN rm -f public/hot \
 
 # Automated BE Unit Tests
 RUN vendor/bin/phpunit
-EXPOSE 8000
+EXPOSE 8080
 
 # Generate APP_KEY and ensure SQLite volume file exists. If so; migrate, seed, and serve
 CMD : "${APP_KEY:=base64:$(php -r 'echo base64_encode(random_bytes(32));')}" \
@@ -53,6 +53,6 @@ CMD : "${APP_KEY:=base64:$(php -r 'echo base64_encode(random_bytes(32));')}" \
  && mkdir -p /sqlite && touch /sqlite/database.sqlite \
  && php artisan migrate --force --graceful \
  && php artisan db:seed --force \
- && php artisan serve --host=0.0.0.0 --port=8000 2>&1 \
+ && php artisan serve --host=0.0.0.0 --port=8080 2>&1 \
     | awk '{ gsub(/0\.0\.0\.0/, "127.0.0.1"); print; fflush() }'
 # Small trick at the end to make sure end-user does not try to reach 0.0.0.0

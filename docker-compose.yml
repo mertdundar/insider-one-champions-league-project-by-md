@@ -6,12 +6,12 @@ services:
     image: insider-one-champions-league:latest
     container_name: insider-one-champions-league-app-by-md
     ports:
-      - "8000:8000"
+      - "8080:8080"
     environment:
       APP_NAME: Insider One Champions League by MD
-      APP_ENV: local
-      APP_DEBUG: "true"
-      APP_URL: http://localhost:8000
+      APP_ENV: production
+      APP_DEBUG: "false"
+      APP_URL: https://insider-one-champions-league-project-by.onrender.com
       APP_KEY: ${APP_KEY:-}
       DB_CONNECTION: sqlite
       DB_DATABASE: /sqlite/database.sqlite
