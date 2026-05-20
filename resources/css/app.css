@@ -1,4 +1,16 @@
 :root {
+    --surface: #ffffff;
+    --surface-alt: #f9fafb;
+    --ink: #1f2937;
+    --ink-muted: #6b7280;
+    --accent: #0f8e9c;
+    --accent-hover: #0a7783;
+    --danger: #c0392b;
+    --danger-hover: #a93226;
+    --border: #e5e7eb;
+    --table-header-bg: #2b3340;
+    --table-header-ink: #ffffff;
+    --radius: 8px;
     --font-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif;
 }
 
@@ -8,8 +20,8 @@
 
 body {
     margin: 0;
-    background: #f9fafb;
-    color: #1f2937;
+    background: var(--surface-alt);
+    color: var(--ink);
     font-family: var(--font-sans), sans-serif;
     font-size: 14px;
     line-height: 1.5;
