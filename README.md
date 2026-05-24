@@ -23,8 +23,8 @@ docker compose version
 Clone the repository and start the app:
 
 ```
-git clone https://github.com/mertdundar/insider-one-champions-league-project-by-md.git champions-league-project
-cd champions-league-project
+git clone https://github.com/mertdundar/football-league-simulation.git football-league-simulation
+cd football-league-simulation
 docker compose up --build
 ```
 
